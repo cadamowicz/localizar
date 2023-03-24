@@ -33,9 +33,10 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 String achou;
-                String teste;
+
                 String t1=texto.getText().toString();// armazena dentro da variavel para comparar
                 String t2=texto2.getText().toString();
+
                 int pos=t1.indexOf(t2);
 
                 if( pos == -1){
@@ -43,11 +44,11 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else{
                     achou="Achou";
-                    teste=t1.replaceAll(t2,"r");
+
                 }
 
                 resultfinal.setText(String.valueOf(achou));
-                texto.setText(String.valueOf(teste));
+
             }
         });
     }
